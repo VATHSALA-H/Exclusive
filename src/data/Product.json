@@ -14,7 +14,7 @@
         "rev": "200",
         "description":"PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
         "stock":"No-Stock",
-        "categoryId": 7
+        "categoryId": 3
     },
     {
         "id":2,
@@ -93,23 +93,24 @@
     {
         "id":6,
         "heading": "products",
-        "name":"Jr. Zoom Soccer Cleats",
-        "img":"product6.png",
-        "cost":1160,
-        "rating":"Five star.png",
-        "buyed":35,
+        "name":"AK-900 Wired Keyboard",
+        "img":"product10.png",
+        "cost":960,
+        "discost":1160,
+        "rating":"Four Star.png",
+        "buyed":75,
         "new":false,
-        "off":false,
-        "dis":false,
-        "color":true,
-        "color1":"yellow",
-        "color2":"Red",
-        "rev": "120",
+        "off":true,
+        "offer":35,
+        "dis":true,
+        "color":false,
+        "rev": "130",
         "description":"PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
-        "stock":"In-Stock",
-        "categoryId": 8
+        "stock":"No-Stock",
+       "categoryId":2
 
     },
+    
     {
         "id":7,
         "heading": "products",
@@ -133,23 +134,23 @@
     {
         "id":8,
         "heading": "products",
-        "name":"Quilted Satin Jacket",
-        "img":"product8.png",
-        "cost":660,
+        "name":"RGB liquid CPU Cooler",
+        "img":"product12.png",
+        "cost":500,
+        "discost":170,
         "rating":"Four Half Star.png",
-        "buyed":55,
+        "buyed":65,
         "new":false,
         "off":false,
-        "dis":false,
-        "color":true,
-        "color1":"#184A48",
-        "color2":"#DB4444",
-        "rev": "200",
+        "dis":true,
+        "color":false,
+        "rev": "90",
         "description":"PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
         "stock":"In-Stock",
-        "categoryId": 7
+        "categoryId": 4
 
     },
+   
     {
         "id":9,
         "heading": "products",
@@ -174,23 +175,24 @@
     {
         "id":10,
         "heading": "products",
-        "name":"AK-900 Wired Keyboard",
-        "img":"product10.png",
-        "cost":960,
-        "discost":1160,
-        "rating":"Four Star.png",
-        "buyed":75,
+        "name":"Jr. Zoom Soccer Cleats",
+        "img":"product6.png",
+        "cost":1160,
+        "rating":"Five star.png",
+        "buyed":35,
         "new":false,
-        "off":true,
-        "offer":35,
-        "dis":true,
-        "color":false,
-        "rev": "130",
+        "off":false,
+        "dis":false,
+        "color":true,
+        "color1":"yellow",
+        "color2":"Red",
+        "rev": "120",
         "description":"PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
-        "stock":"No-Stock",
-       "categoryId":1
+        "stock":"In-Stock",
+        "categoryId": 3
 
     },
+    
     {
         "id":11,
         "heading": "products",
@@ -214,20 +216,22 @@
     {
         "id":12,
         "heading": "products",
-        "name":"RGB liquid CPU Cooler",
-        "img":"product12.png",
-        "cost":500,
-        "discost":170,
+        "name":"Quilted Satin Jacket",
+        "img":"product8.png",
+        "cost":660,
         "rating":"Four Half Star.png",
-        "buyed":65,
+        "buyed":55,
         "new":false,
         "off":false,
-        "dis":true,
-        "color":false,
-        "rev": "90",
+        "dis":false,
+        "color":true,
+        "color1":"#184A48",
+        "color2":"#DB4444",
+        "rev": "200",
         "description":"PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
         "stock":"In-Stock",
-        "categoryId": 4
+        "categoryId": 3
 
     }
+    
 ]

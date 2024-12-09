@@ -3,26 +3,26 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 function Header({ searchQuery, onSearchChange, onSearchSubmit }) {
-  const [isOpen, setIsOpen] = useState(false); // State to toggle the dropdown visibility
-  const [selectedLanguage, setSelectedLanguage] = useState('English'); // Track selected language
+  const [isOpen, setIsOpen] = useState(false); 
+  const [selectedLanguage, setSelectedLanguage] = useState('English'); 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen); // Toggle dropdown state
+    setIsOpen(!isOpen); 
   };
 
   const handleLanguageChange = (language) => {
-    setSelectedLanguage(language); // Update selected language
-    setIsOpen(false); // Close the dropdown after selecting a language
+    setSelectedLanguage(language); 
+    setIsOpen(false); 
   };
 
   const handleSearchChange = (e) => {
-    onSearchChange(e.target.value); // Pass the search query to the parent component (Home.js)
+    onSearchChange(e.target.value); 
   };
   const handleSearchSubmit = (e) => {
-    e.preventDefault(); // Prevent page reload on submit
+    e.preventDefault(); 
     onSearchChange(searchQuery);
-    onSearchSubmit() // Trigger the search filter action on submit
+    onSearchSubmit()
   };
 
   const toggleMenu = () => {

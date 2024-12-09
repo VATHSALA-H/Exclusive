@@ -9,30 +9,30 @@ import { useNavigate } from 'react-router-dom';
 export default function Products() {
     const [products, setProducts] = useState([]);
 
-    const [filteredProducts, setFilteredProducts] = useState([]); // Filtered products based on search
+    const [filteredProducts, setFilteredProducts] = useState([]); 
     const [searchQuery, setSearchQuery] = useState('');
     const productRef = useRef(null);
 
     const navigate = useNavigate();
 
     const handleProductClick = (id) => {
-        // Navigate to the product detail page
+      
         navigate(`/products/${id}`);
       };
 
     useEffect(() => {
         setProducts(productData); 
-        setFilteredProducts(productData);  // Set the imported data to state
+        setFilteredProducts(productData);  
     }, []);
 
     const handleSearchChange = (query) => {
         setSearchQuery(query);
 
-        // Filter products based on search query (case-insensitive)
+       
         const filtered = products.filter((product) =>
             product.name.toLowerCase().includes(query.toLowerCase())
         );
-        setFilteredProducts(filtered); // Update filtered products
+        setFilteredProducts(filtered); 
     };
  
     const scrollToProducts = () => {

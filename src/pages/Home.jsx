@@ -10,8 +10,8 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
     const [products, setProducts] = useState([]); // All products
-    const [filteredProducts, setFilteredProducts] = useState([]); // Filtered products based on search
-    const [searchQuery, setSearchQuery] = useState(''); // Track search input
+    const [filteredProducts, setFilteredProducts] = useState([]); 
+    const [searchQuery, setSearchQuery] = useState(''); 
     const navigate = useNavigate();
     const productRef = useRef(null);
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -23,18 +23,18 @@ export default function Home() {
   
 
     useEffect(() => {
-        setProducts(productData.slice(0, 8)); // Set the imported data to state
-        setFilteredProducts(productData.slice(0, 8)); // Initial filter (show all products)
+        setProducts(productData.slice(0, 8));
+        setFilteredProducts(productData.slice(0, 8)); 
     }, []);
 
     const handleSearchChange = (query) => {
         setSearchQuery(query);
 
-        // Filter products based on search query (case-insensitive)
+    
         const filtered = products.filter((product) =>
             product.name.toLowerCase().includes(query.toLowerCase())
         );
-        setFilteredProducts(filtered); // Update filtered products
+        setFilteredProducts(filtered); 
     };
 
     const scrollToProducts = () => {
@@ -44,7 +44,8 @@ export default function Home() {
     };
 
     const handleCategorySelect = (category) => {
-        setSelectedCategory(category); // Set selected category
+        setSelectedCategory(category); 
+        scrollToProducts();
     };
 
     useEffect(() => {
@@ -60,7 +61,7 @@ export default function Home() {
             );
         }
 
-        setFilteredProducts(filtered); // Update the filtered products list
+        setFilteredProducts(filtered); 
     }, [searchQuery, selectedCategory, products]);
     return (
         <div>
@@ -140,7 +141,7 @@ export default function Home() {
                         </ProductSection>
                     ))
                 ) : (
-                    <h3>No products found for "{searchQuery}"</h3>
+                    <h3>No products found for "{searchQuery || (selectedCategory ? selectedCategory.name : '')}"</h3>
                 )}
             </Productmap>
 

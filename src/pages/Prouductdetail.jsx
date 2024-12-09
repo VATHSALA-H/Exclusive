@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 export default function ProductDetail() {
   const [product, setProduct] = useState(null);
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const { id } = useParams(); // Get the id from the URL
+  const { id } = useParams(); 
   const [searchQuery, setSearchQuery] = useState('');
   const productRef = useRef(null);
   const navigate = useNavigate();
@@ -19,25 +19,23 @@ export default function ProductDetail() {
   };
 
   useEffect(() => {
-    // Find the selected product based on the ID from the URL
     const selectedProduct = productData.find((product) => product.id === parseInt(id));
     setProduct(selectedProduct);
 
-    // Shuffle the products and pick random ones for related products
     const shuffledProducts = shuffleArray([...productData]).slice(0, 4);
     setFilteredProducts(shuffledProducts);
   }, [id]);
 
-  // Function to shuffle an array (Fisher-Yates algorithm)
+  
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+      [array[i], array[j]] = [array[j], array[i]]; 
     }
     return array;
   };
 
-  // Search Handler
+ 
   const handleSearchChange = (query) => {
     setSearchQuery(query);
     const filtered = productData.filter((product) =>
@@ -46,7 +44,7 @@ export default function ProductDetail() {
     setFilteredProducts(filtered);
   };
 
-  // Scroll to products section
+
   const scrollToProducts = () => {
     if (productRef.current) {
       productRef.current.scrollIntoView({ behavior: 'smooth' });
