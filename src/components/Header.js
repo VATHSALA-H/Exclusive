@@ -253,19 +253,25 @@ const Home = styled(Link)`
   }
 `;
 
-const Contact = styled.li`
+const Contact = styled(Link)`
+  text-decoration: none;
+  color: black;
   &:hover {
     border-bottom: 1px solid gray;
   }
 `;
 
 const About = styled.li`
+  text-decoration: none;
+  color: black;
   &:hover {
     border-bottom: 1px solid gray;
   }
 `;
 
 const Signup = styled.li`
+  text-decoration: none;
+  color: black;
   &:hover {
     border-bottom: 1px solid gray;
   }

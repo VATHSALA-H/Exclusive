@@ -421,6 +421,9 @@ align-items: center;
 width:25%;
 padding-top: 30px;
 justify-content: center;
+@media screen and (min-width:1080px) and (max-width: 1440px) {
+  /* margin-left: 30%; */
+}
 @media screen and (min-width: 640px) and  (max-width: 768px) { 
  width: 40%;
 }
